@@ -67,7 +67,7 @@ export default function CurrentWeather() {
         </div>
       )}
       {isLoading ? (
-        <div className="absolute inset-0 ">
+        <div className="absolute inset-0">
           <div className="skeleton h-full w-full"></div>
         </div>
       ) : (
@@ -98,7 +98,7 @@ export default function CurrentWeather() {
               <div className="col-span-4 flex flex-col items-center">
                 <img
                   className="size-15"
-                  src="/public/thermometer-celsius.svg"
+                  src="/thermometer-celsius.svg"
                   alt="thermometer svg"
                 />
                 <p className="text-lg">{apparentTemperature}°</p>
@@ -107,18 +107,14 @@ export default function CurrentWeather() {
               <div className="col-span-4 flex flex-col items-center">
                 <img
                   className="size-15"
-                  src="/public/humidity.svg"
+                  src="/humidity.svg"
                   alt="humidity svg"
                 />
                 <p className="text-lg">{relativeHumidity}%</p>
                 <p className="text-sm">Humidity</p>
               </div>
               <div className="col-span-4 flex flex-col items-center">
-                <img
-                  className="size-15"
-                  src="/public/wind.svg"
-                  alt="wind svg."
-                />
+                <img className="size-15" src="/wind.svg" alt="wind svg." />
                 <p className="text-lg">{windSpeed} km/h</p>
                 <p className="text-sm">Wind Speed</p>
               </div>
